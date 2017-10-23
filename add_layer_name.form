@@ -1,0 +1,120 @@
+#--------------------------------------------------------------------
+#This file is part of add_layer_name script for Allegro 17.2
+#
+#Created by Robert Feranec
+#(c) 2017 FEDEVEL, https://www.fedevel.com/academy
+#
+#Download the script: https://github.com/FEDEVEL/allegro-script-add_layer_name
+#--------------------------------------------------------------------
+
+#If your Cadence installation directory is d:\Cadence\SPB_17.2\
+#then copy this file into: d:\Cadence\SPB_17.2\share\local\pcb\forms\
+
+#Documentation
+#More information about commands used in this form: file:///D:/Cadence/SPB_17.2/doc/algroskill/11frmint.html#414284
+
+FILE_TYPE=FORM_DEFN VERSION=2
+
+FORM AUTOGREYTEXT 
+	FIXED
+	PORT 64 100
+	HEADER "FEDEVEL Commands"
+	
+	POPUP <FONTSIZES>"PLACEHOLDER""0". 
+
+	TILE
+	#======================
+
+		#simple text, the text is bold, position of text 2,1 (x,y)
+		TEXT "Add Layer Name to the Selected Layers" 
+		OPTIONS BOLD
+		TLOC 2 1
+		ENDTEXT
+		
+		TEXT "This command will automatically add Layer name into the selected layers."		
+		TLOC 2 3
+		ENDTEXT
+		
+		#group, starts at 2,5 and has 60 18 (height width) size
+		GROUP "Select Layers"
+		FLOC 2 5
+		FSIZE 60 18
+		INFO group
+		ENDGROUP
+		
+			TEXT "TOP"
+			FLOC 5 7
+			ENDTEXT
+
+			#list
+			FIELD subclass_top
+			FLOC 5 9
+			LIST "" 25 7
+			OPTIONS multiselect prettyprint
+			ENDFIELD
+			
+			TEXT "BOTTOM (Mirrored)"
+			FLOC 35 7
+			ENDTEXT
+
+			#list
+			FIELD subclass_bottom
+			FLOC 35 9
+			LIST "" 25 7
+			OPTIONS multiselect prettyprint
+			ENDFIELD
+
+		#group	
+		GROUP "Options"
+		FLOC 2 23
+		FSIZE 60 5
+		INFO group
+		ENDGROUP
+
+			TEXT "Text Size:"
+			FLOC 5 25
+			ENDTEXT
+			
+			#drop down box
+			FIELD font_size
+			FLOC 13 25
+			ENUMSET 12
+			POP "FONTSIZES"
+			ENDFIELD
+			
+			TEXT "Position (X:Y):"
+			FLOC 35 25
+			ENDTEXT
+			
+			#text input field, STRFILLIN = of the input filed and maximum number of characters which can be written
+			FIELD text_position_x
+			FLOC 46 25
+			STRFILLIN 5 10
+			ENDFIELD
+
+			TEXT ":"
+			FLOC 53 25
+			ENDTEXT
+			
+			#text input field
+			FIELD text_position_y
+			FLOC 54 25
+			STRFILLIN 5 10
+			ENDFIELD	
+			
+		#button
+		FIELD done
+		FLOC 10 30
+		MENUBUTTON "Press this button to add names to the selected layers" 10 3
+		ENDFIELD
+		
+		#this is just to add bottom padding
+		GROUP ""
+		FLOC 1 32
+		FSIZE 0 1
+		ENDGROUP	
+
+	#======================
+	ENDTILE
+
+ENDFORM
