@@ -50,7 +50,7 @@ print "Loading add_layer_name. Created by Robert Feranec (c) 2017 FEDEVEL"
 axlCmdRegister( "add_layer_name" `add_layer_name)
 
 ;When anything happen in our form, this function is called (e.g when you do any chages in the form or when you press button)
-(defun _afCallback (fw)
+(defun _afAddLayerNameCallback (fw)
 	(prog (t1 item field cnt)
 	 
 		if((fw->doneState == 1)  then ;we pressed our done button Note: 0 = action; 1 = done; 2 = cancel; 3 = abort, more info at file:///D:/Cadence/SPB_17.2/doc/algroskill/11frmint.html#428663
@@ -102,7 +102,7 @@ procedure( add_layer_name()
 	axlUIWPrint(nil "Starting add_layer_name script.") ;console printing
 	
 	;create the form
-	fw = axlFormCreate( (gensym) "add_layer_name.form" nil '_afCallback t nil)
+	fw = axlFormCreate( (gensym) "add_layer_name.form" nil '_afAddLayerNameCallback t nil)
 	
 	;NOTE: this is currently hardcoded for "MANUFACTURING" class, but if people are interested, a class selection drop down box can be added in new script version
 	variants = axlSubclasses( axlMapClassName(DEFAULT_CLASS)) ;get list of all subclasses in MANUFACTURING class
