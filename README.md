@@ -49,3 +49,13 @@ Documentation which you may need when you are creating your own scripts or which
 
 Examples to create your own scripts (very useful, especially the axlfrom.il) can be found here:
 d:\Cadence\SPB_17.2\share\pcb\examples\skill\form\
+
+### Note for me
+Here is how to create software links under Windows 7
+
+You have to start cmd as Administrator. Then run following commands:
+
+```
+mklink "d:\Cadence\SPB_17.2\share\local\pcb\forms\add_layer_name.form" "d:\Users\Robo\Code\allegro\scripts\add_layer_name\add_layer_name.form"
+mklink "d:\Cadence\SPB_17.2\share\local\pcb\skill\add_layer_name.il" "d:\Users\Robo\Code\allegro\scripts\add_layer_name\add_layer_name.il"
+```
