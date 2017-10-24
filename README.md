@@ -7,11 +7,21 @@ Created by Robert Feranec
 
 (c) 2017 FEDEVEL, https://www.fedevel.com/academy
 
+### Screenshots
+#### Script GUI / Dialogue Form
+![Script GUI / Dialogue Form](https://user-images.githubusercontent.com/5564443/31919490-ad7a6e4c-b817-11e7-8d36-093c58fad0e2.png)
+#### Before running the script
+![Before running the script](https://user-images.githubusercontent.com/5564443/31919557-2c608476-b818-11e7-97d5-5552fb464f4c.png)
+#### After running the script
+Notice the added layer name in the bottom left corner
+![After running the script - notice the added layer name in the bottom left corner](https://user-images.githubusercontent.com/5564443/31919566-355eb818-b818-11e7-8fa8-958385825828.png)
+#### Detail of the automatically added layer name
+![Detail of the automatically added layer name](https://user-images.githubusercontent.com/5564443/31919568-3da6e2b6-b818-11e7-9577-cf3b8a4caa70.png)
 
-### Location of these files
-If your Cadence installation directory is d:\Cadence\SPB_17.2\
-* then copy *add_layer_name.il* file into: d:\Cadence\SPB_17.2\share\local\pcb\skill\
-* and copy *add_layer_name.form* into d:\Cadence\SPB_17.2\share\local\pcb\forms\
+### Installation
+To use this script, simply copy the files into your Cadence directory. For example, if your Cadence installation directory is d:\Cadence\SPB_17.2\ then:
+* copy *add_layer_name.il* file into: d:\Cadence\SPB_17.2\share\local\pcb\skill\
+* copy *add_layer_name.form* into d:\Cadence\SPB_17.2\share\local\pcb\forms\
 
 ### How to load the script
 #### Automatically
