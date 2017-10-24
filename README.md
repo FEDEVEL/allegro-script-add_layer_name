@@ -8,7 +8,7 @@ Created by Robert Feranec
 (c) 2017 FEDEVEL, https://www.fedevel.com/academy
 
 
-### Location of this files
+### Location of these files
 If your Cadence installation directory is d:\Cadence\SPB_17.2\
 * then copy *add_layer_name.il* file into: d:\Cadence\SPB_17.2\share\local\pcb\skill\
 * and copy *add_layer_name.form* into d:\Cadence\SPB_17.2\share\local\pcb\forms\
