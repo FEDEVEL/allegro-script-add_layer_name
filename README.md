@@ -26,10 +26,10 @@ To use this script, simply copy the files into your Cadence directory. For examp
 ### How to load the script
 #### Automatically
 If you would like to automatically load this script by your Allegro when it starts, do following:
-1. Go to: d:\Cadence\SPB_17.2\share\local\pcb\skill\
-2. Copy *example.ilinit* into *allegro.ilinit*
-3. Copy *add_layer_name.il* to d:\Cadence\SPB_17.2\share\local\pcb\skill\
-4. Copy *add_layer_name.form* to d:\Cadence\SPB_17.2\share\local\pcb\forms\
+1. Switch OFF Allegro
+2. Go to: d:\Cadence\SPB_17.2\share\local\pcb\skill\
+3. Copy *example.ilinit* into *allegro.ilinit*
+4. Start Allegro
 
 #### Manually (useful for debugging)
 This is what you need to do to (re)load the script in the Allegro commad line:
