@@ -7,6 +7,9 @@ Created by Robert Feranec
 
 (c) 2017 FEDEVEL, https://www.fedevel.com/academy
 
+### Video
+Here you can find a detailed video about how to create, run and use this script
+[![Script GUI / Dialogue Form](https://user-images.githubusercontent.com/5564443/32172814-2574b7fa-bd3a-11e7-8bdf-52da990275c7.jpg)](https://www.youtube.com/watch?v=qY_MK-_1VWE)
 ### Screenshots
 #### Script GUI / Dialogue Form
 ![Script GUI / Dialogue Form](https://user-images.githubusercontent.com/5564443/31919490-ad7a6e4c-b817-11e7-8d36-093c58fad0e2.png)
